@@ -24,6 +24,8 @@
 		2FB390A028BE0401004FB4A8 /* NetworkImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3909F28BE0401004FB4A8 /* NetworkImageView.swift */; };
 		2FB390A228BE06F0004FB4A8 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB390A128BE06F0004FB4A8 /* ImageCache.swift */; };
 		2FB390A428BE1039004FB4A8 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB390A328BE1039004FB4A8 /* UserProfile.swift */; };
+		2FB390A628BE28D5004FB4A8 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB390A528BE28D5004FB4A8 /* Reachability.swift */; };
+		2FB390A828BE496C004FB4A8 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB390A728BE496C004FB4A8 /* PersistenceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		2FB3909F28BE0401004FB4A8 /* NetworkImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImageView.swift; sourceTree = "<group>"; };
 		2FB390A128BE06F0004FB4A8 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		2FB390A328BE1039004FB4A8 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		2FB390A528BE28D5004FB4A8 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		2FB390A728BE496C004FB4A8 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,11 +125,13 @@
 				2FB3909728BDEAE0004FB4A8 /* UserProfileViewController.swift */,
 				2FB3909D28BDFA67004FB4A8 /* UserListTableViewCell.swift */,
 				2FB3909928BDEB17004FB4A8 /* NetworkManager.swift */,
+				2FB390A728BE496C004FB4A8 /* PersistenceManager.swift */,
 				2FB3909B28BDEBB8004FB4A8 /* User.swift */,
 				2FB390A328BE1039004FB4A8 /* UserProfile.swift */,
 				2FB3909F28BE0401004FB4A8 /* NetworkImageView.swift */,
 				2FB390A128BE06F0004FB4A8 /* ImageCache.swift */,
 				2FB3906828BDE63F004FB4A8 /* Main.storyboard */,
+				2FB390A528BE28D5004FB4A8 /* Reachability.swift */,
 				2FB3906E28BDE642004FB4A8 /* Assets.xcassets */,
 				2FB3907028BDE642004FB4A8 /* LaunchScreen.storyboard */,
 				2FB3907328BDE642004FB4A8 /* Info.plist */,
@@ -284,8 +290,10 @@
 			files = (
 				2FB390A228BE06F0004FB4A8 /* ImageCache.swift in Sources */,
 				2FB3909628BDEAD4004FB4A8 /* UserListViewController.swift in Sources */,
+				2FB390A628BE28D5004FB4A8 /* Reachability.swift in Sources */,
 				2FB3909828BDEAE0004FB4A8 /* UserProfileViewController.swift in Sources */,
 				2FB3909A28BDEB17004FB4A8 /* NetworkManager.swift in Sources */,
+				2FB390A828BE496C004FB4A8 /* PersistenceManager.swift in Sources */,
 				2FB3909C28BDEBB8004FB4A8 /* User.swift in Sources */,
 				2FB390A428BE1039004FB4A8 /* UserProfile.swift in Sources */,
 				2FB3909E28BDFA67004FB4A8 /* UserListTableViewCell.swift in Sources */,
