@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F51560228BF6E7900150681 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51560128BF6E7900150681 /* UserListViewModel.swift */; };
+		2F51560428BF6E9200150681 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51560328BF6E9200150681 /* UserProfileViewModel.swift */; };
+		2F51560628BF6EFA00150681 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51560528BF6EFA00150681 /* AppDIContainer.swift */; };
+		2F51560928BF7C9400150681 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51560828BF7C9400150681 /* FlowCoordinator.swift */; };
+		2F51560B28BF7CE600150681 /* UserFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51560A28BF7CE600150681 /* UserFlowCoordinator.swift */; };
+		2F51560F28BF7D7300150681 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51560E28BF7D7300150681 /* StoryboardInstantiable.swift */; };
+		2F51565028BF886800150681 /* UserDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51564F28BF886800150681 /* UserDataSource.swift */; };
+		2F51565228BF888F00150681 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51565128BF888F00150681 /* UserModel.swift */; };
+		2F51565428BF88A200150681 /* UserLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51565328BF88A200150681 /* UserLocalDataSource.swift */; };
+		2F51565628BF88BA00150681 /* UserNetworkDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51565528BF88BA00150681 /* UserNetworkDataSource.swift */; };
+		2F51565828BF88EE00150681 /* UserNetworkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51565728BF88EE00150681 /* UserNetworkRepository.swift */; };
+		2F51565A28BF88FE00150681 /* UserLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51565928BF88FE00150681 /* UserLocalRepository.swift */; };
+		2F51565C28BF892400150681 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51565B28BF892400150681 /* UserRepository.swift */; };
+		2F51566828BFA5CA00150681 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51566728BFA5CA00150681 /* Observable.swift */; };
+		2F51566B28BFA64700150681 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51566A28BFA64700150681 /* LoadingView.swift */; };
+		2F51566D28BFC36500150681 /* User+Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51566C28BFC36500150681 /* User+Note.swift */; };
+		2F66561728BF314700229546 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F66561628BF314700229546 /* AppConstants.swift */; };
+		2F66561928BF386D00229546 /* UIImageView+Invert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F66561828BF386D00229546 /* UIImageView+Invert.swift */; };
+		2F66561B28BF3A9500229546 /* UserListNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F66561A28BF3A9500229546 /* UserListNormalCell.swift */; };
+		2F66561D28BF3B0B00229546 /* UserListWithNoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F66561C28BF3B0B00229546 /* UserListWithNoteCell.swift */; };
 		2FB3906328BDE63F004FB4A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3906228BDE63F004FB4A8 /* AppDelegate.swift */; };
 		2FB3906528BDE63F004FB4A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3906428BDE63F004FB4A8 /* SceneDelegate.swift */; };
 		2FB3906A28BDE63F004FB4A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FB3906828BDE63F004FB4A8 /* Main.storyboard */; };
@@ -14,8 +34,6 @@
 		2FB3906F28BDE642004FB4A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FB3906E28BDE642004FB4A8 /* Assets.xcassets */; };
 		2FB3907228BDE642004FB4A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FB3907028BDE642004FB4A8 /* LaunchScreen.storyboard */; };
 		2FB3907D28BDE643004FB4A8 /* GitHubUsersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3907C28BDE643004FB4A8 /* GitHubUsersTests.swift */; };
-		2FB3908728BDE643004FB4A8 /* GitHubUsersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3908628BDE643004FB4A8 /* GitHubUsersUITests.swift */; };
-		2FB3908928BDE643004FB4A8 /* GitHubUsersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3908828BDE643004FB4A8 /* GitHubUsersUITestsLaunchTests.swift */; };
 		2FB3909628BDEAD4004FB4A8 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3909528BDEAD4004FB4A8 /* UserListViewController.swift */; };
 		2FB3909828BDEAE0004FB4A8 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3909728BDEAE0004FB4A8 /* UserProfileViewController.swift */; };
 		2FB3909A28BDEB17004FB4A8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3909928BDEB17004FB4A8 /* NetworkManager.swift */; };
@@ -46,6 +64,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F51560128BF6E7900150681 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		2F51560328BF6E9200150681 /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
+		2F51560528BF6EFA00150681 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		2F51560828BF7C9400150681 /* FlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
+		2F51560A28BF7CE600150681 /* UserFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFlowCoordinator.swift; sourceTree = "<group>"; };
+		2F51560E28BF7D7300150681 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		2F51564F28BF886800150681 /* UserDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSource.swift; sourceTree = "<group>"; };
+		2F51565128BF888F00150681 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		2F51565328BF88A200150681 /* UserLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocalDataSource.swift; sourceTree = "<group>"; };
+		2F51565528BF88BA00150681 /* UserNetworkDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNetworkDataSource.swift; sourceTree = "<group>"; };
+		2F51565728BF88EE00150681 /* UserNetworkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNetworkRepository.swift; sourceTree = "<group>"; };
+		2F51565928BF88FE00150681 /* UserLocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocalRepository.swift; sourceTree = "<group>"; };
+		2F51565B28BF892400150681 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		2F51566728BFA5CA00150681 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		2F51566A28BFA64700150681 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		2F51566C28BFC36500150681 /* User+Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Note.swift"; sourceTree = "<group>"; };
+		2F66561628BF314700229546 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		2F66561828BF386D00229546 /* UIImageView+Invert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Invert.swift"; sourceTree = "<group>"; };
+		2F66561A28BF3A9500229546 /* UserListNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListNormalCell.swift; sourceTree = "<group>"; };
+		2F66561C28BF3B0B00229546 /* UserListWithNoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListWithNoteCell.swift; sourceTree = "<group>"; };
 		2FB3905F28BDE63F004FB4A8 /* GitHubUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB3906228BDE63F004FB4A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FB3906428BDE63F004FB4A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,8 +95,6 @@
 		2FB3907828BDE643004FB4A8 /* GitHubUsersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubUsersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB3907C28BDE643004FB4A8 /* GitHubUsersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUsersTests.swift; sourceTree = "<group>"; };
 		2FB3908228BDE643004FB4A8 /* GitHubUsersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubUsersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FB3908628BDE643004FB4A8 /* GitHubUsersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUsersUITests.swift; sourceTree = "<group>"; };
-		2FB3908828BDE643004FB4A8 /* GitHubUsersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUsersUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2FB3909528BDEAD4004FB4A8 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
 		2FB3909728BDEAE0004FB4A8 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		2FB3909928BDEB17004FB4A8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -96,12 +132,186 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F5155F528BF6C7700150681 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2F5155F828BF6D7800150681 /* DataSource */,
+				2F5155F928BF6D8E00150681 /* Model */,
+				2F5155FA28BF6DA000150681 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		2F5155F628BF6CD900150681 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				2F5155FD28BF6DD500150681 /* UseCase */,
+				2F5155FC28BF6DC100150681 /* Entity */,
+				2F5155FB28BF6DB500150681 /* Repository */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		2F5155F728BF6D4000150681 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				2F51566428BFA4F700150681 /* Utilities */,
+				2F51560728BF7AB200150681 /* Flows */,
+				2F51560028BF6E1900150681 /* View */,
+				2F5155FF28BF6E0F00150681 /* ViewModel */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		2F5155F828BF6D7800150681 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				2F51564F28BF886800150681 /* UserDataSource.swift */,
+				2F51565528BF88BA00150681 /* UserNetworkDataSource.swift */,
+				2F51565328BF88A200150681 /* UserLocalDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		2F5155F928BF6D8E00150681 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F51565128BF888F00150681 /* UserModel.swift */,
+				2FB3909B28BDEBB8004FB4A8 /* User.swift */,
+				2F51566C28BFC36500150681 /* User+Note.swift */,
+				2FB390A328BE1039004FB4A8 /* UserProfile.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F5155FA28BF6DA000150681 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				2F51565728BF88EE00150681 /* UserNetworkRepository.swift */,
+				2F51565928BF88FE00150681 /* UserLocalRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		2F5155FB28BF6DB500150681 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				2F51565B28BF892400150681 /* UserRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		2F5155FC28BF6DC100150681 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		2F5155FD28BF6DD500150681 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		2F5155FF28BF6E0F00150681 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2F51560128BF6E7900150681 /* UserListViewModel.swift */,
+				2F51560328BF6E9200150681 /* UserProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2F51560028BF6E1900150681 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2FB3909528BDEAD4004FB4A8 /* UserListViewController.swift */,
+				2FB3909728BDEAE0004FB4A8 /* UserProfileViewController.swift */,
+				2FB3909D28BDFA67004FB4A8 /* UserListTableViewCell.swift */,
+				2F66561A28BF3A9500229546 /* UserListNormalCell.swift */,
+				2F66561C28BF3B0B00229546 /* UserListWithNoteCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F51560728BF7AB200150681 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				2F51560A28BF7CE600150681 /* UserFlowCoordinator.swift */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		2F51565D28BF898400150681 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				2F51565F28BF89B300150681 /* Persistence */,
+				2F51565E28BF899800150681 /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		2F51565E28BF899800150681 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2FB390A528BE28D5004FB4A8 /* Reachability.swift */,
+				2FB3909928BDEB17004FB4A8 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2F51565F28BF89B300150681 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				2FB390A728BE496C004FB4A8 /* PersistenceManager.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		2F51566428BFA4F700150681 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2FB390A128BE06F0004FB4A8 /* ImageCache.swift */,
+				2F51566728BFA5CA00150681 /* Observable.swift */,
+				2F51566928BFA62500150681 /* View */,
+				2F51566628BFA51000150681 /* Protocol */,
+				2F51566528BFA50600150681 /* Extension */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2F51566528BFA50600150681 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2F66561828BF386D00229546 /* UIImageView+Invert.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		2F51566628BFA51000150681 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				2F51560E28BF7D7300150681 /* StoryboardInstantiable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		2F51566928BFA62500150681 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2FB3909F28BE0401004FB4A8 /* NetworkImageView.swift */,
+				2F51566A28BFA64700150681 /* LoadingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2FB3905628BDE63F004FB4A8 = {
 			isa = PBXGroup;
 			children = (
 				2FB3906128BDE63F004FB4A8 /* GitHubUsers */,
 				2FB3907B28BDE643004FB4A8 /* GitHubUsersTests */,
-				2FB3908528BDE643004FB4A8 /* GitHubUsersUITests */,
 				2FB3906028BDE63F004FB4A8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,19 +331,16 @@
 			children = (
 				2FB3906228BDE63F004FB4A8 /* AppDelegate.swift */,
 				2FB3906428BDE63F004FB4A8 /* SceneDelegate.swift */,
-				2FB3909528BDEAD4004FB4A8 /* UserListViewController.swift */,
-				2FB3909728BDEAE0004FB4A8 /* UserProfileViewController.swift */,
-				2FB3909D28BDFA67004FB4A8 /* UserListTableViewCell.swift */,
-				2FB3909928BDEB17004FB4A8 /* NetworkManager.swift */,
-				2FB390A728BE496C004FB4A8 /* PersistenceManager.swift */,
-				2FB3909B28BDEBB8004FB4A8 /* User.swift */,
-				2FB390A328BE1039004FB4A8 /* UserProfile.swift */,
-				2FB3909F28BE0401004FB4A8 /* NetworkImageView.swift */,
-				2FB390A128BE06F0004FB4A8 /* ImageCache.swift */,
+				2F66561628BF314700229546 /* AppConstants.swift */,
+				2F51560528BF6EFA00150681 /* AppDIContainer.swift */,
+				2F51560828BF7C9400150681 /* FlowCoordinator.swift */,
+				2F51565D28BF898400150681 /* Infrastructure */,
+				2F5155F528BF6C7700150681 /* Data */,
+				2F5155F628BF6CD900150681 /* Domain */,
+				2F5155F728BF6D4000150681 /* Presentation */,
 				2FB3906828BDE63F004FB4A8 /* Main.storyboard */,
-				2FB390A528BE28D5004FB4A8 /* Reachability.swift */,
-				2FB3906E28BDE642004FB4A8 /* Assets.xcassets */,
 				2FB3907028BDE642004FB4A8 /* LaunchScreen.storyboard */,
+				2FB3906E28BDE642004FB4A8 /* Assets.xcassets */,
 				2FB3907328BDE642004FB4A8 /* Info.plist */,
 				2FB3906B28BDE63F004FB4A8 /* GitHubUsers.xcdatamodeld */,
 			);
@@ -146,15 +353,6 @@
 				2FB3907C28BDE643004FB4A8 /* GitHubUsersTests.swift */,
 			);
 			path = GitHubUsersTests;
-			sourceTree = "<group>";
-		};
-		2FB3908528BDE643004FB4A8 /* GitHubUsersUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2FB3908628BDE643004FB4A8 /* GitHubUsersUITests.swift */,
-				2FB3908828BDE643004FB4A8 /* GitHubUsersUITestsLaunchTests.swift */,
-			);
-			path = GitHubUsersUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,18 +486,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F66561D28BF3B0B00229546 /* UserListWithNoteCell.swift in Sources */,
+				2F51560228BF6E7900150681 /* UserListViewModel.swift in Sources */,
 				2FB390A228BE06F0004FB4A8 /* ImageCache.swift in Sources */,
+				2F66561928BF386D00229546 /* UIImageView+Invert.swift in Sources */,
 				2FB3909628BDEAD4004FB4A8 /* UserListViewController.swift in Sources */,
 				2FB390A628BE28D5004FB4A8 /* Reachability.swift in Sources */,
 				2FB3909828BDEAE0004FB4A8 /* UserProfileViewController.swift in Sources */,
+				2F51565428BF88A200150681 /* UserLocalDataSource.swift in Sources */,
 				2FB3909A28BDEB17004FB4A8 /* NetworkManager.swift in Sources */,
 				2FB390A828BE496C004FB4A8 /* PersistenceManager.swift in Sources */,
+				2F51565828BF88EE00150681 /* UserNetworkRepository.swift in Sources */,
+				2F66561B28BF3A9500229546 /* UserListNormalCell.swift in Sources */,
+				2F51560B28BF7CE600150681 /* UserFlowCoordinator.swift in Sources */,
 				2FB3909C28BDEBB8004FB4A8 /* User.swift in Sources */,
+				2F51565028BF886800150681 /* UserDataSource.swift in Sources */,
+				2F51565C28BF892400150681 /* UserRepository.swift in Sources */,
 				2FB390A428BE1039004FB4A8 /* UserProfile.swift in Sources */,
 				2FB3909E28BDFA67004FB4A8 /* UserListTableViewCell.swift in Sources */,
+				2F51560628BF6EFA00150681 /* AppDIContainer.swift in Sources */,
+				2F51566B28BFA64700150681 /* LoadingView.swift in Sources */,
+				2F51566D28BFC36500150681 /* User+Note.swift in Sources */,
+				2F51560F28BF7D7300150681 /* StoryboardInstantiable.swift in Sources */,
+				2F51566828BFA5CA00150681 /* Observable.swift in Sources */,
+				2F51565228BF888F00150681 /* UserModel.swift in Sources */,
 				2FB390A028BE0401004FB4A8 /* NetworkImageView.swift in Sources */,
 				2FB3906D28BDE63F004FB4A8 /* GitHubUsers.xcdatamodeld in Sources */,
+				2F66561728BF314700229546 /* AppConstants.swift in Sources */,
+				2F51560428BF6E9200150681 /* UserProfileViewModel.swift in Sources */,
 				2FB3906328BDE63F004FB4A8 /* AppDelegate.swift in Sources */,
+				2F51560928BF7C9400150681 /* FlowCoordinator.swift in Sources */,
+				2F51565628BF88BA00150681 /* UserNetworkDataSource.swift in Sources */,
+				2F51565A28BF88FE00150681 /* UserLocalRepository.swift in Sources */,
 				2FB3906528BDE63F004FB4A8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,8 +534,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FB3908928BDE643004FB4A8 /* GitHubUsersUITestsLaunchTests.swift in Sources */,
-				2FB3908728BDE643004FB4A8 /* GitHubUsersUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,9 +698,9 @@
 				INFOPLIST_FILE = GitHubUsers/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -510,9 +726,9 @@
 				INFOPLIST_FILE = GitHubUsers/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

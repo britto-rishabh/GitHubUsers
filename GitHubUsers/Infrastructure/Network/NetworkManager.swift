@@ -7,10 +7,11 @@
 
 import Foundation
 
+
 class NetworkManager{
     static let shared = NetworkManager()
-    func getGitHubUsers(page:Int = 0, onCompletion:@escaping (Array<User>?)->()) {
-        if let url = URL(string: "https://api.github.com/users?since=0"){
+    func getGitHubUsers(lastUserId:Int = 0,onCompletion:@escaping (Array<User>?)->()) {
+        if let url = URL(string: "https://api.github.com/users?since=\(lastUserId)"){
             URLSession.shared.dataTask(with: url) { data, response, error in
                 if let jsonData = data {
                     let users = try? JSONDecoder().decode(Array<User>.self, from: jsonData)

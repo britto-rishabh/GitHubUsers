@@ -1,22 +1,22 @@
 //
-//  UserListTableViewCell.swift
+//  UserListNormalCell.swift
 //  GitHubUsers
 //
-//  Created by Britto Thomas on 30/08/22.
+//  Created by Britto Thomas on 31/08/22.
 //
 
 import UIKit
 
-class UserListTableViewCell: UITableViewCell {
-    
-    static let reuseIdentifier = "UserListTableViewCell"
-    
+class UserListNormalCell: UITableViewCell, UserListTableViewCell {
+
+    static var reuseIdentifier = "UserListNormalCell"
     @IBOutlet weak var imageViewAvatar: UIImageView!
     @IBOutlet weak var labelName: UILabel!
     @IBOutlet weak var labelDetails: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.imageViewAvatar.layer.cornerRadius = 35
         // Initialization code
     }
 
@@ -26,15 +26,5 @@ class UserListTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    
-    func setUser(user:User) {
-        let urlString = user.avatarURL
-        if !urlString.isEmpty, let url = URL(string: urlString){
-            imageViewAvatar.setImage(from: url)
-        }
-        
-        labelName.text = user.login
-        labelDetails.text = user.htmlURL
-    }
 
 }

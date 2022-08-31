@@ -8,7 +8,7 @@
 import UIKit
 
 extension UIImageView {
-    func setImage(from url: URL, placeholder: UIImage? = nil) {
+    func setImage(from url: URL, placeholder: UIImage? = nil, onCompletion: (()->Void)? = {}) {
         self.image = placeholder
         
         ImageCache.shared.image(for: url) { [weak self] result in
@@ -16,6 +16,7 @@ extension UIImageView {
             case .success(let image):
                 DispatchQueue.main.async {
                     self?.image = image
+                    onCompletion?()
                 }
             case .failure:
                 break
