@@ -16,6 +16,9 @@ protocol UserListTableViewCell:UITableViewCell {
 }
 
 extension UserListTableViewCell {
+    
+
+    
     func setUser(user:User, inverted:Bool?) {
         let urlString = user.avatarURL
         if !urlString.isEmpty, let url = URL(string: urlString){
@@ -31,7 +34,7 @@ extension UserListTableViewCell {
         if user.profileViewed {
             self.backgroundColor = UIColor.lightGray.withAlphaComponent(0.2)
         }else{
-            self.backgroundColor = UIColor.white
+            self.backgroundColor = UIColor.systemBackground
         }
     }
 }
