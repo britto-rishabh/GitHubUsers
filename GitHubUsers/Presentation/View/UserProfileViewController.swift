@@ -36,35 +36,28 @@ class UserProfileViewController: UIViewController, StoryboardInstantiable {
     }
     
     func bindViewModel() {
-        viewModel.name.observe(on: self, observerBlock: { name in
-            self.title = name
-            self.labelName.text = name
-        })
+        self.title = viewModel.user.login
+        self.labelName.text = viewModel.user.login
+        let imageUrl = viewModel.user.avatarURL
+        if !imageUrl.isEmpty, let url = URL(string: imageUrl){
+            self.imageView.setImage(from: url)
+        }
+        self.textAreaNote.text = viewModel.user.note
         
-        viewModel.imageUrl.observe(on: self, observerBlock: { imageUrl in
-            if !imageUrl.isEmpty, let url = URL(string: imageUrl){
-                self.imageView.setImage(from: url)
+        viewModel.profile.observe(on: self, observerBlock: { profile in
+            
+            if let _profile = profile{
+    
+                let company = _profile.company ?? ""
+                let blog = _profile.blog ?? ""
+                let followers = _profile.followers
+                let following = _profile.following
+                
+                self.labelFollowers.text = "\(followers)"
+                self.labelFollowing.text = "\(following)"
+                self.labelCompany.text = company
+                self.labelBio.text = blog
             }
-        })
-        
-        viewModel.followers.observe(on: self, observerBlock: { followers in
-            self.labelFollowers.text = "\(followers)"
-        })
-        
-        viewModel.following.observe(on: self, observerBlock: { following in
-            self.labelFollowing.text = "\(following)"
-        })
-        
-        viewModel.company.observe(on: self, observerBlock: { company in
-            self.labelCompany.text = company
-        })
-        
-        viewModel.blog.observe(on: self, observerBlock: { blog in
-            self.labelBio.text = blog
-        })
-        
-        viewModel.note.observe(on: self, observerBlock: { note in
-            self.textAreaNote.text = note
         })
     }
     

@@ -8,3 +8,5 @@
 import Foundation
 
 let USERS_PER_PAGE = 30
+let BASE_URL = "https://api.github.com"
+let USER_API_PATH = "/users"

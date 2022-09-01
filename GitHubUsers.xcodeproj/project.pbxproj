@@ -9,20 +9,21 @@
 /* Begin PBXBuildFile section */
 		2F51560228BF6E7900150681 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51560128BF6E7900150681 /* UserListViewModel.swift */; };
 		2F51560428BF6E9200150681 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51560328BF6E9200150681 /* UserProfileViewModel.swift */; };
-		2F51560628BF6EFA00150681 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51560528BF6EFA00150681 /* AppDIContainer.swift */; };
 		2F51560928BF7C9400150681 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51560828BF7C9400150681 /* FlowCoordinator.swift */; };
 		2F51560B28BF7CE600150681 /* UserFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51560A28BF7CE600150681 /* UserFlowCoordinator.swift */; };
 		2F51560F28BF7D7300150681 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51560E28BF7D7300150681 /* StoryboardInstantiable.swift */; };
 		2F51565028BF886800150681 /* UserDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51564F28BF886800150681 /* UserDataSource.swift */; };
 		2F51565228BF888F00150681 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51565128BF888F00150681 /* UserModel.swift */; };
-		2F51565428BF88A200150681 /* UserLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51565328BF88A200150681 /* UserLocalDataSource.swift */; };
-		2F51565628BF88BA00150681 /* UserNetworkDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51565528BF88BA00150681 /* UserNetworkDataSource.swift */; };
-		2F51565828BF88EE00150681 /* UserNetworkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51565728BF88EE00150681 /* UserNetworkRepository.swift */; };
-		2F51565A28BF88FE00150681 /* UserLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51565928BF88FE00150681 /* UserLocalRepository.swift */; };
+		2F51565628BF88BA00150681 /* NetworkUserDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51565528BF88BA00150681 /* NetworkUserDataSource.swift */; };
+		2F51565828BF88EE00150681 /* NetworkUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51565728BF88EE00150681 /* NetworkUserRepository.swift */; };
 		2F51565C28BF892400150681 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51565B28BF892400150681 /* UserRepository.swift */; };
 		2F51566828BFA5CA00150681 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51566728BFA5CA00150681 /* Observable.swift */; };
 		2F51566B28BFA64700150681 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51566A28BFA64700150681 /* LoadingView.swift */; };
-		2F51566D28BFC36500150681 /* User+Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51566C28BFC36500150681 /* User+Note.swift */; };
+		2F51566F28C0750000150681 /* UserProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51566E28C0750000150681 /* UserProfileModel.swift */; };
+		2F51567128C087C300150681 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51567028C087C300150681 /* UseCase.swift */; };
+		2F51567328C087D300150681 /* GetUserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51567228C087D300150681 /* GetUserList.swift */; };
+		2F51567528C087DD00150681 /* GetUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51567428C087DD00150681 /* GetUserProfile.swift */; };
+		2F51568128C0A3C300150681 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51568028C0A3C300150681 /* NetworkManager.swift */; };
 		2F66561728BF314700229546 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F66561628BF314700229546 /* AppConstants.swift */; };
 		2F66561928BF386D00229546 /* UIImageView+Invert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F66561828BF386D00229546 /* UIImageView+Invert.swift */; };
 		2F66561B28BF3A9500229546 /* UserListNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F66561A28BF3A9500229546 /* UserListNormalCell.swift */; };
@@ -36,7 +37,6 @@
 		2FB3907D28BDE643004FB4A8 /* GitHubUsersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3907C28BDE643004FB4A8 /* GitHubUsersTests.swift */; };
 		2FB3909628BDEAD4004FB4A8 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3909528BDEAD4004FB4A8 /* UserListViewController.swift */; };
 		2FB3909828BDEAE0004FB4A8 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3909728BDEAE0004FB4A8 /* UserProfileViewController.swift */; };
-		2FB3909A28BDEB17004FB4A8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3909928BDEB17004FB4A8 /* NetworkManager.swift */; };
 		2FB3909C28BDEBB8004FB4A8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3909B28BDEBB8004FB4A8 /* User.swift */; };
 		2FB3909E28BDFA67004FB4A8 /* UserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3909D28BDFA67004FB4A8 /* UserListTableViewCell.swift */; };
 		2FB390A028BE0401004FB4A8 /* NetworkImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3909F28BE0401004FB4A8 /* NetworkImageView.swift */; };
@@ -66,20 +66,21 @@
 /* Begin PBXFileReference section */
 		2F51560128BF6E7900150681 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		2F51560328BF6E9200150681 /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
-		2F51560528BF6EFA00150681 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
 		2F51560828BF7C9400150681 /* FlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
 		2F51560A28BF7CE600150681 /* UserFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFlowCoordinator.swift; sourceTree = "<group>"; };
 		2F51560E28BF7D7300150681 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
 		2F51564F28BF886800150681 /* UserDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSource.swift; sourceTree = "<group>"; };
 		2F51565128BF888F00150681 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		2F51565328BF88A200150681 /* UserLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocalDataSource.swift; sourceTree = "<group>"; };
-		2F51565528BF88BA00150681 /* UserNetworkDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNetworkDataSource.swift; sourceTree = "<group>"; };
-		2F51565728BF88EE00150681 /* UserNetworkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNetworkRepository.swift; sourceTree = "<group>"; };
-		2F51565928BF88FE00150681 /* UserLocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocalRepository.swift; sourceTree = "<group>"; };
+		2F51565528BF88BA00150681 /* NetworkUserDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUserDataSource.swift; sourceTree = "<group>"; };
+		2F51565728BF88EE00150681 /* NetworkUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUserRepository.swift; sourceTree = "<group>"; };
 		2F51565B28BF892400150681 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		2F51566728BFA5CA00150681 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		2F51566A28BFA64700150681 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
-		2F51566C28BFC36500150681 /* User+Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Note.swift"; sourceTree = "<group>"; };
+		2F51566E28C0750000150681 /* UserProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileModel.swift; sourceTree = "<group>"; };
+		2F51567028C087C300150681 /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		2F51567228C087D300150681 /* GetUserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserList.swift; sourceTree = "<group>"; };
+		2F51567428C087DD00150681 /* GetUserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserProfile.swift; sourceTree = "<group>"; };
+		2F51568028C0A3C300150681 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		2F66561628BF314700229546 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		2F66561828BF386D00229546 /* UIImageView+Invert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Invert.swift"; sourceTree = "<group>"; };
 		2F66561A28BF3A9500229546 /* UserListNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListNormalCell.swift; sourceTree = "<group>"; };
@@ -97,7 +98,6 @@
 		2FB3908228BDE643004FB4A8 /* GitHubUsersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubUsersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB3909528BDEAD4004FB4A8 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
 		2FB3909728BDEAE0004FB4A8 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
-		2FB3909928BDEB17004FB4A8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		2FB3909B28BDEBB8004FB4A8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2FB3909D28BDFA67004FB4A8 /* UserListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewCell.swift; sourceTree = "<group>"; };
 		2FB3909F28BE0401004FB4A8 /* NetworkImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImageView.swift; sourceTree = "<group>"; };
@@ -167,8 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				2F51564F28BF886800150681 /* UserDataSource.swift */,
-				2F51565528BF88BA00150681 /* UserNetworkDataSource.swift */,
-				2F51565328BF88A200150681 /* UserLocalDataSource.swift */,
+				2F51565528BF88BA00150681 /* NetworkUserDataSource.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -177,9 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				2F51565128BF888F00150681 /* UserModel.swift */,
-				2FB3909B28BDEBB8004FB4A8 /* User.swift */,
-				2F51566C28BFC36500150681 /* User+Note.swift */,
-				2FB390A328BE1039004FB4A8 /* UserProfile.swift */,
+				2F51566E28C0750000150681 /* UserProfileModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -187,8 +184,7 @@
 		2F5155FA28BF6DA000150681 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				2F51565728BF88EE00150681 /* UserNetworkRepository.swift */,
-				2F51565928BF88FE00150681 /* UserLocalRepository.swift */,
+				2F51565728BF88EE00150681 /* NetworkUserRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -204,6 +200,8 @@
 		2F5155FC28BF6DC100150681 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				2FB3909B28BDEBB8004FB4A8 /* User.swift */,
+				2FB390A328BE1039004FB4A8 /* UserProfile.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -211,6 +209,9 @@
 		2F5155FD28BF6DD500150681 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				2F51567028C087C300150681 /* UseCase.swift */,
+				2F51567228C087D300150681 /* GetUserList.swift */,
+				2F51567428C087DD00150681 /* GetUserProfile.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -257,7 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				2FB390A528BE28D5004FB4A8 /* Reachability.swift */,
-				2FB3909928BDEB17004FB4A8 /* NetworkManager.swift */,
+				2F51568028C0A3C300150681 /* NetworkManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -332,7 +333,6 @@
 				2FB3906228BDE63F004FB4A8 /* AppDelegate.swift */,
 				2FB3906428BDE63F004FB4A8 /* SceneDelegate.swift */,
 				2F66561628BF314700229546 /* AppConstants.swift */,
-				2F51560528BF6EFA00150681 /* AppDIContainer.swift */,
 				2F51560828BF7C9400150681 /* FlowCoordinator.swift */,
 				2F51565D28BF898400150681 /* Infrastructure */,
 				2F5155F528BF6C7700150681 /* Data */,
@@ -487,16 +487,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F66561D28BF3B0B00229546 /* UserListWithNoteCell.swift in Sources */,
+				2F51567328C087D300150681 /* GetUserList.swift in Sources */,
 				2F51560228BF6E7900150681 /* UserListViewModel.swift in Sources */,
 				2FB390A228BE06F0004FB4A8 /* ImageCache.swift in Sources */,
 				2F66561928BF386D00229546 /* UIImageView+Invert.swift in Sources */,
 				2FB3909628BDEAD4004FB4A8 /* UserListViewController.swift in Sources */,
 				2FB390A628BE28D5004FB4A8 /* Reachability.swift in Sources */,
 				2FB3909828BDEAE0004FB4A8 /* UserProfileViewController.swift in Sources */,
-				2F51565428BF88A200150681 /* UserLocalDataSource.swift in Sources */,
-				2FB3909A28BDEB17004FB4A8 /* NetworkManager.swift in Sources */,
 				2FB390A828BE496C004FB4A8 /* PersistenceManager.swift in Sources */,
-				2F51565828BF88EE00150681 /* UserNetworkRepository.swift in Sources */,
+				2F51565828BF88EE00150681 /* NetworkUserRepository.swift in Sources */,
+				2F51568128C0A3C300150681 /* NetworkManager.swift in Sources */,
 				2F66561B28BF3A9500229546 /* UserListNormalCell.swift in Sources */,
 				2F51560B28BF7CE600150681 /* UserFlowCoordinator.swift in Sources */,
 				2FB3909C28BDEBB8004FB4A8 /* User.swift in Sources */,
@@ -504,20 +504,20 @@
 				2F51565C28BF892400150681 /* UserRepository.swift in Sources */,
 				2FB390A428BE1039004FB4A8 /* UserProfile.swift in Sources */,
 				2FB3909E28BDFA67004FB4A8 /* UserListTableViewCell.swift in Sources */,
-				2F51560628BF6EFA00150681 /* AppDIContainer.swift in Sources */,
+				2F51567128C087C300150681 /* UseCase.swift in Sources */,
+				2F51566F28C0750000150681 /* UserProfileModel.swift in Sources */,
 				2F51566B28BFA64700150681 /* LoadingView.swift in Sources */,
-				2F51566D28BFC36500150681 /* User+Note.swift in Sources */,
 				2F51560F28BF7D7300150681 /* StoryboardInstantiable.swift in Sources */,
 				2F51566828BFA5CA00150681 /* Observable.swift in Sources */,
 				2F51565228BF888F00150681 /* UserModel.swift in Sources */,
 				2FB390A028BE0401004FB4A8 /* NetworkImageView.swift in Sources */,
 				2FB3906D28BDE63F004FB4A8 /* GitHubUsers.xcdatamodeld in Sources */,
+				2F51567528C087DD00150681 /* GetUserProfile.swift in Sources */,
 				2F66561728BF314700229546 /* AppConstants.swift in Sources */,
 				2F51560428BF6E9200150681 /* UserProfileViewModel.swift in Sources */,
 				2FB3906328BDE63F004FB4A8 /* AppDelegate.swift in Sources */,
 				2F51560928BF7C9400150681 /* FlowCoordinator.swift in Sources */,
-				2F51565628BF88BA00150681 /* UserNetworkDataSource.swift in Sources */,
-				2F51565A28BF88FE00150681 /* UserLocalRepository.swift in Sources */,
+				2F51565628BF88BA00150681 /* NetworkUserDataSource.swift in Sources */,
 				2FB3906528BDE63F004FB4A8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

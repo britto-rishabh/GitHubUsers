@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+protocol UserRepository{
+    func fetchUserList(from id:Int, cached: @escaping ([User]) -> Void, completion: @escaping (Result<[User], Error>)->Void)
+    func fetchUserProfile(for name:String, cached: @escaping (UserProfile) -> Void, completion: @escaping (Result<UserProfile, Error>)->Void)
+}

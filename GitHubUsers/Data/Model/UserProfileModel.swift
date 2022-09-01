@@ -1,6 +1,14 @@
+//
+//  UserProfileModel.swift
+//  GitHubUsers
+//
+//  Created by Britto Thomas on 01/09/22.
+//
+
 import Foundation
 
-struct User: Codable {
+struct UserProfileModel: Codable {
+    
     let login: String
     let id: Int
     let nodeID: String
@@ -11,8 +19,11 @@ struct User: Codable {
     let subscriptionsURL, organizationsURL, reposURL: String
     let eventsURL: String
     let receivedEventsURL: String
-    let type: UserType
+    let type: String
     let siteAdmin: Bool
+    let name: String
+    let company,blog,location, email, hireable, bio,twitterUsername: String?
+    let publicRepos, publicGists, followers, following: Int
 
     enum CodingKeys: String, CodingKey {
         case login, id
@@ -32,10 +43,16 @@ struct User: Codable {
         case receivedEventsURL = "received_events_url"
         case type
         case siteAdmin = "site_admin"
+        case name, company, blog, location, email, hireable, bio
+        case twitterUsername = "twitter_username"
+        case publicRepos = "public_repos"
+        case publicGists = "public_gists"
+        case followers, following
     }
 }
 
-enum UserType: String, Codable {
-    case organization = "Organization"
-    case user = "User"
+extension UserProfileModel{
+    func entity() -> UserProfile {
+        return UserProfile(login: login, id: id, avatarURL: avatarURL, name:name, company:company, blog:blog, followers:followers, following:following)
+    }
 }

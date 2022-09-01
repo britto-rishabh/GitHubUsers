@@ -1,11 +1,11 @@
-//
-//  User+Note.swift
-//  GitHubUsers
-//
-//  Created by Britto Thomas on 31/08/22.
-//
-
 import Foundation
+
+struct User {
+    let login: String
+    let id: Int
+    let avatarURL: String
+    let url: String
+}
 
 extension User{
     var hasNote:Bool{PersistenceManager.hasNote(for: Int32(id))}

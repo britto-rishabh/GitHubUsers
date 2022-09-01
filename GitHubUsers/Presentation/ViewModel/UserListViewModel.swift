@@ -8,13 +8,15 @@
 import Foundation
 
 class UserListViewModel {
-
+    
     var fetching: Observable<Bool> = Observable(false)
     var users:[User] = []
     var filteredUsers: Observable<[User]> = Observable([])
     var lastUserId: Int = 0
     var reachedEndOfPage: Bool = false
     var searchText: Observable<String> = Observable("")
+    
+    private var getUserList = GetUserList()
     
     func viewDidLoad(){
         loadUsers()
@@ -27,7 +29,8 @@ class UserListViewModel {
     func loadUsers() {
         if self.reachedEndOfPage == false && self.fetching.value == false{
             self.fetching = Observable(true)
-            NetworkManager.shared.getGitHubUsers(lastUserId: lastUserId) { [weak self] _users in
+            let parameter = GetUserListParameter(id: lastUserId)
+            getUserList.call(parameter: parameter) { [weak self] _users in
                 if let _users = _users{
                     if _users.count>0 {
                         self?.users.append(contentsOf: _users)

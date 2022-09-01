@@ -37,7 +37,7 @@ class UserListWithNoteCell: UITableViewCell, UserListTableViewCell {
         }
         
         labelName.text = user.login
-        labelDetails.text = user.htmlURL
+        labelDetails.text = user.url
     }
 
 }
