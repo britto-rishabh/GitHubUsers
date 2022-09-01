@@ -17,11 +17,12 @@ class UserProfileViewController: UIViewController, StoryboardInstantiable {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var labelFollowers: UILabel!
     @IBOutlet weak var labelFollowing: UILabel!
+    @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var labelName: UILabel!
     @IBOutlet weak var labelCompany: UILabel!
     @IBOutlet weak var labelBio: UILabel!
     @IBOutlet weak var textAreaNote: UITextView!
-    
+    @IBOutlet weak var buttonSave: UIButton!
     
     static func create(with viewModel: UserProfileViewModel) -> UserProfileViewController {
         let vc = UserProfileViewController.instantiate()
@@ -31,8 +32,22 @@ class UserProfileViewController: UIViewController, StoryboardInstantiable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.seupUI()
         self.bindViewModel()
-        viewModel.viewDidLoad()
+        self.viewModel.viewDidLoad()
+    }
+    
+    func seupUI() {
+    
+        contentView.layer.cornerRadius = 10
+        contentView.layer.borderWidth = 1
+        contentView.layer.borderColor = UIColor.gray.cgColor
+        
+        textAreaNote.layer.cornerRadius = 10
+        textAreaNote.layer.borderWidth = 1
+        textAreaNote.layer.borderColor = UIColor.gray.cgColor
+        
+        buttonSave.layer.cornerRadius = 10
     }
     
     func bindViewModel() {

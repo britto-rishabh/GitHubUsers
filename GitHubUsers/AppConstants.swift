@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 let USERS_PER_PAGE = 30
 let BASE_URL = "https://api.github.com"

@@ -215,7 +215,7 @@
                                 <rect key="frame" x="40" y="324" width="334" height="150"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DsP-lf-KJg">
-                                        <rect key="frame" x="0.0" y="0.0" width="334" height="99.5"/>
+                                        <rect key="frame" x="10" y="10" width="314" height="99.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="97R-zg-SMK">
                                                 <rect key="frame" x="0.0" y="0.0" width="112" height="26.5"/>
@@ -273,9 +273,9 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="DsP-lf-KJg" firstAttribute="leading" secondItem="5Km-wP-gXI" secondAttribute="leading" id="Btd-qK-N52"/>
-                                    <constraint firstAttribute="trailing" secondItem="DsP-lf-KJg" secondAttribute="trailing" id="SMP-uH-u3c"/>
-                                    <constraint firstItem="DsP-lf-KJg" firstAttribute="top" secondItem="5Km-wP-gXI" secondAttribute="top" id="xBz-Kg-Dud"/>
+                                    <constraint firstItem="DsP-lf-KJg" firstAttribute="leading" secondItem="5Km-wP-gXI" secondAttribute="leading" constant="10" id="Btd-qK-N52"/>
+                                    <constraint firstAttribute="trailing" secondItem="DsP-lf-KJg" secondAttribute="trailing" constant="10" id="SMP-uH-u3c"/>
+                                    <constraint firstItem="DsP-lf-KJg" firstAttribute="top" secondItem="5Km-wP-gXI" secondAttribute="top" constant="10" id="xBz-Kg-Dud"/>
                                     <constraint firstAttribute="height" constant="150" id="yvp-jz-T9j"/>
                                 </constraints>
                             </view>
@@ -297,11 +297,14 @@
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ufx-bG-65C">
                                         <rect key="frame" x="0.0" y="206" width="334" height="44"/>
+                                        <color key="backgroundColor" red="0.4745898247" green="0.18283316490000001" blue="0.62234818940000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="Nk9-6W-FlB"/>
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Save"/>
+                                        <state key="normal" title="Save">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="buttonActionSave:" destination="yME-rL-HN0" eventType="touchUpInside" id="C2R-hv-AMj"/>
                                         </connections>
@@ -329,6 +332,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buttonSave" destination="Ufx-bG-65C" id="LcG-hL-Mkp"/>
+                        <outlet property="contentView" destination="5Km-wP-gXI" id="vJU-7F-sv0"/>
                         <outlet property="imageView" destination="G4u-GU-5p0" id="csI-ra-vnb"/>
                         <outlet property="labelBio" destination="ksM-H4-4h2" id="Bi9-My-PQw"/>
                         <outlet property="labelCompany" destination="ZAU-3A-THA" id="qRS-Xa-ZeB"/>
