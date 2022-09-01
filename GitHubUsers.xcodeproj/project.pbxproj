@@ -54,13 +54,6 @@
 			remoteGlobalIDString = 2FB3905E28BDE63F004FB4A8;
 			remoteInfo = GitHubUsers;
 		};
-		2FB3908328BDE643004FB4A8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2FB3905728BDE63F004FB4A8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2FB3905E28BDE63F004FB4A8;
-			remoteInfo = GitHubUsers;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -95,7 +88,6 @@
 		2FB3907328BDE642004FB4A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FB3907828BDE643004FB4A8 /* GitHubUsersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubUsersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB3907C28BDE643004FB4A8 /* GitHubUsersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUsersTests.swift; sourceTree = "<group>"; };
-		2FB3908228BDE643004FB4A8 /* GitHubUsersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubUsersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB3909528BDEAD4004FB4A8 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
 		2FB3909728BDEAE0004FB4A8 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		2FB3909B28BDEBB8004FB4A8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -116,13 +108,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2FB3907528BDE643004FB4A8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2FB3907F28BDE643004FB4A8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -322,7 +307,6 @@
 			children = (
 				2FB3905F28BDE63F004FB4A8 /* GitHubUsers.app */,
 				2FB3907828BDE643004FB4A8 /* GitHubUsersTests.xctest */,
-				2FB3908228BDE643004FB4A8 /* GitHubUsersUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -393,24 +377,6 @@
 			productReference = 2FB3907828BDE643004FB4A8 /* GitHubUsersTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2FB3908128BDE643004FB4A8 /* GitHubUsersUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2FB3909228BDE643004FB4A8 /* Build configuration list for PBXNativeTarget "GitHubUsersUITests" */;
-			buildPhases = (
-				2FB3907E28BDE643004FB4A8 /* Sources */,
-				2FB3907F28BDE643004FB4A8 /* Frameworks */,
-				2FB3908028BDE643004FB4A8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2FB3908428BDE643004FB4A8 /* PBXTargetDependency */,
-			);
-			name = GitHubUsersUITests;
-			productName = GitHubUsersUITests;
-			productReference = 2FB3908228BDE643004FB4A8 /* GitHubUsersUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -425,10 +391,6 @@
 						CreatedOnToolsVersion = 13.4;
 					};
 					2FB3907728BDE643004FB4A8 = {
-						CreatedOnToolsVersion = 13.4;
-						TestTargetID = 2FB3905E28BDE63F004FB4A8;
-					};
-					2FB3908128BDE643004FB4A8 = {
 						CreatedOnToolsVersion = 13.4;
 						TestTargetID = 2FB3905E28BDE63F004FB4A8;
 					};
@@ -449,7 +411,6 @@
 			targets = (
 				2FB3905E28BDE63F004FB4A8 /* GitHubUsers */,
 				2FB3907728BDE643004FB4A8 /* GitHubUsersTests */,
-				2FB3908128BDE643004FB4A8 /* GitHubUsersUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -466,13 +427,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2FB3907628BDE643004FB4A8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2FB3908028BDE643004FB4A8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -530,13 +484,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2FB3907E28BDE643004FB4A8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -544,11 +491,6 @@
 			isa = PBXTargetDependency;
 			target = 2FB3905E28BDE63F004FB4A8 /* GitHubUsers */;
 			targetProxy = 2FB3907928BDE643004FB4A8 /* PBXContainerItemProxy */;
-		};
-		2FB3908428BDE643004FB4A8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2FB3905E28BDE63F004FB4A8 /* GitHubUsers */;
-			targetProxy = 2FB3908328BDE643004FB4A8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -622,7 +564,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -676,7 +618,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -751,7 +693,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q3A788QAWU;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rspl.GitHubUsersTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -771,7 +713,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q3A788QAWU;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rspl.GitHubUsersTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -779,42 +721,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHubUsers.app/GitHubUsers";
-			};
-			name = Release;
-		};
-		2FB3909328BDE643004FB4A8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q3A788QAWU;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rspl.GitHubUsersUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = GitHubUsers;
-			};
-			name = Debug;
-		};
-		2FB3909428BDE643004FB4A8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q3A788QAWU;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rspl.GitHubUsersUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = GitHubUsers;
 			};
 			name = Release;
 		};
@@ -844,15 +750,6 @@
 			buildConfigurations = (
 				2FB3909028BDE643004FB4A8 /* Debug */,
 				2FB3909128BDE643004FB4A8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2FB3909228BDE643004FB4A8 /* Build configuration list for PBXNativeTarget "GitHubUsersUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2FB3909328BDE643004FB4A8 /* Debug */,
-				2FB3909428BDE643004FB4A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
