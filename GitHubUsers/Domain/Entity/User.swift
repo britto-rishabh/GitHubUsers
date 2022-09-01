@@ -8,6 +8,7 @@ struct User {
 }
 
 extension User{
+    var profileViewed:Bool{PersistenceManager.profileViewed(for: Int32(id))}
     var hasNote:Bool{PersistenceManager.hasNote(for: Int32(id))}
     var note:String{PersistenceManager.note(for: Int32(id))}
 }

@@ -27,5 +27,11 @@ extension UserListTableViewCell {
         }
         labelName.text = user.login
         labelDetails.text = user.url
+        
+        if user.profileViewed {
+            self.backgroundColor = UIColor.lightGray.withAlphaComponent(0.2)
+        }else{
+            self.backgroundColor = UIColor.white
+        }
     }
 }

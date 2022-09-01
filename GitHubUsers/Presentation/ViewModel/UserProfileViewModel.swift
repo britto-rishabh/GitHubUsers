@@ -21,6 +21,11 @@ class UserProfileViewModel {
     
     func viewDidLoad(){
         loadUserProfile()
+        profileViewed()
+    }
+    
+    func viewWillAppear(_ animated: Bool){
+
     }
     
     func loadUserProfile() {
@@ -30,6 +35,10 @@ class UserProfileViewModel {
                 self?.profile.value = _profile
             }
         }
+    }
+    
+    func profileViewed()  {
+        PersistenceManager.updateProfileViewed(for: Int32(user.id))
     }
     
     func saveNote(note:String){

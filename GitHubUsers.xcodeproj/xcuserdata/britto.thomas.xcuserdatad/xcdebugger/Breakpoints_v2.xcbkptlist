@@ -14,8 +14,8 @@
             filePath = "GitHubUsers/Presentation/View/UserProfileViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "bindViewModel()"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "GitHubUsers/Presentation/ViewModel/UserProfileViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "loadUserProfile()"
             landmarkType = "7">
          </BreakpointContent>

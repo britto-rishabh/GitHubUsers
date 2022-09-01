@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import Network
+import NotificationBannerSwift
 
 class UserListViewModel {
     
@@ -15,12 +17,61 @@ class UserListViewModel {
     var lastUserId: Int = 0
     var reachedEndOfPage: Bool = false
     var searchText: Observable<String> = Observable("")
-    
     private var getUserList = GetUserList()
+    var banner: StatusBarNotificationBanner?
+    
+    var connected = true
     
     func viewDidLoad(){
-        loadUsers()
+        self.loadUsers()
+        self.consigureNetworkMonitor()
     }
+    
+    func viewWillAppear(_ animated: Bool){
+        filteredUsers.value = users
+    }
+    
+    func consigureNetworkMonitor() {
+        let monitor = NWPathMonitor()
+        let queue = DispatchQueue(label: "Monitor")
+        monitor.start(queue: queue)
+        monitor.pathUpdateHandler = { [weak self] path in
+            
+            if path.status == .satisfied {
+                DispatchQueue.main.async {
+                    self?.connectedBackToInternet()
+                }
+            } else  if path.status == .unsatisfied {
+                DispatchQueue.main.async {
+                    self?.disconnectedFromInternet()
+                }
+            }
+        }
+    }
+    
+    func connectedBackToInternet(){
+        if !connected {
+            self.showStatusBarNotification(message:"Connected",style:.success)
+            self.fetching.value = false
+            loadUsers()
+            connected = true
+        }
+        
+    }
+    
+    func disconnectedFromInternet(){
+        if connected {
+            self.showStatusBarNotification(message:"Not Connected",style:.warning)
+            connected = false
+        }
+    }
+    
+    func showStatusBarNotification(message:String, style:BannerStyle) {
+        self.banner?.dismiss()
+        self.banner = StatusBarNotificationBanner(title: message, style: style)
+        self.banner?.show()
+    }
+    
     
     var isEmpty: Bool{
         return users.isEmpty

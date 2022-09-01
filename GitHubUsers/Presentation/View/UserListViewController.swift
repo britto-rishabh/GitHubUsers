@@ -28,6 +28,10 @@ class UserListViewController: UIViewController, StoryboardInstantiable {
         viewModel.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        viewModel.viewWillAppear(animated)
+    }
+    
 
     func setupSearchController() {
         searchController = UISearchController(searchResultsController: nil)

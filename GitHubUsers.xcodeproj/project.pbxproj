@@ -24,6 +24,8 @@
 		2F51567328C087D300150681 /* GetUserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51567228C087D300150681 /* GetUserList.swift */; };
 		2F51567528C087DD00150681 /* GetUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51567428C087DD00150681 /* GetUserProfile.swift */; };
 		2F51568128C0A3C300150681 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51568028C0A3C300150681 /* NetworkManager.swift */; };
+		2F51568628C0EA6000150681 /* NotificationBannerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2F51568528C0EA6000150681 /* NotificationBannerSwift */; };
+		2F51568928C10C5300150681 /* UIView-Shimmer in Frameworks */ = {isa = PBXBuildFile; productRef = 2F51568828C10C5300150681 /* UIView-Shimmer */; };
 		2F66561728BF314700229546 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F66561628BF314700229546 /* AppConstants.swift */; };
 		2F66561928BF386D00229546 /* UIImageView+Invert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F66561828BF386D00229546 /* UIImageView+Invert.swift */; };
 		2F66561B28BF3A9500229546 /* UserListNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F66561A28BF3A9500229546 /* UserListNormalCell.swift */; };
@@ -42,7 +44,6 @@
 		2FB390A028BE0401004FB4A8 /* NetworkImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3909F28BE0401004FB4A8 /* NetworkImageView.swift */; };
 		2FB390A228BE06F0004FB4A8 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB390A128BE06F0004FB4A8 /* ImageCache.swift */; };
 		2FB390A428BE1039004FB4A8 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB390A328BE1039004FB4A8 /* UserProfile.swift */; };
-		2FB390A628BE28D5004FB4A8 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB390A528BE28D5004FB4A8 /* Reachability.swift */; };
 		2FB390A828BE496C004FB4A8 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB390A728BE496C004FB4A8 /* PersistenceManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -95,7 +96,6 @@
 		2FB3909F28BE0401004FB4A8 /* NetworkImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImageView.swift; sourceTree = "<group>"; };
 		2FB390A128BE06F0004FB4A8 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		2FB390A328BE1039004FB4A8 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
-		2FB390A528BE28D5004FB4A8 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		2FB390A728BE496C004FB4A8 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +104,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F51568628C0EA6000150681 /* NotificationBannerSwift in Frameworks */,
+				2F51568928C10C5300150681 /* UIView-Shimmer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,7 +244,6 @@
 		2F51565E28BF899800150681 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				2FB390A528BE28D5004FB4A8 /* Reachability.swift */,
 				2F51568028C0A3C300150681 /* NetworkManager.swift */,
 			);
 			path = Network;
@@ -355,6 +356,10 @@
 			dependencies = (
 			);
 			name = GitHubUsers;
+			packageProductDependencies = (
+				2F51568528C0EA6000150681 /* NotificationBannerSwift */,
+				2F51568828C10C5300150681 /* UIView-Shimmer */,
+			);
 			productName = GitHubUsers;
 			productReference = 2FB3905F28BDE63F004FB4A8 /* GitHubUsers.app */;
 			productType = "com.apple.product-type.application";
@@ -405,6 +410,10 @@
 				Base,
 			);
 			mainGroup = 2FB3905628BDE63F004FB4A8;
+			packageReferences = (
+				2F51568428C0EA6000150681 /* XCRemoteSwiftPackageReference "NotificationBanner" */,
+				2F51568728C10C5300150681 /* XCRemoteSwiftPackageReference "UIView-Shimmer" */,
+			);
 			productRefGroup = 2FB3906028BDE63F004FB4A8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -446,7 +455,6 @@
 				2FB390A228BE06F0004FB4A8 /* ImageCache.swift in Sources */,
 				2F66561928BF386D00229546 /* UIImageView+Invert.swift in Sources */,
 				2FB3909628BDEAD4004FB4A8 /* UserListViewController.swift in Sources */,
-				2FB390A628BE28D5004FB4A8 /* Reachability.swift in Sources */,
 				2FB3909828BDEAE0004FB4A8 /* UserProfileViewController.swift in Sources */,
 				2FB390A828BE496C004FB4A8 /* PersistenceManager.swift in Sources */,
 				2F51565828BF88EE00150681 /* NetworkUserRepository.swift in Sources */,
@@ -755,6 +763,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2F51568428C0EA6000150681 /* XCRemoteSwiftPackageReference "NotificationBanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Daltron/NotificationBanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		2F51568728C10C5300150681 /* XCRemoteSwiftPackageReference "UIView-Shimmer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/omerfarukozturk/UIView-Shimmer.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2F51568528C0EA6000150681 /* NotificationBannerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F51568428C0EA6000150681 /* XCRemoteSwiftPackageReference "NotificationBanner" */;
+			productName = NotificationBannerSwift;
+		};
+		2F51568828C10C5300150681 /* UIView-Shimmer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F51568728C10C5300150681 /* XCRemoteSwiftPackageReference "UIView-Shimmer" */;
+			productName = "UIView-Shimmer";
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		2FB3906B28BDE63F004FB4A8 /* GitHubUsers.xcdatamodeld */ = {
